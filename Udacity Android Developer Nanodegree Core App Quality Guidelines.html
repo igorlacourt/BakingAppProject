@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!-- saved from url=(0064)http://udacity.github.io/android-nanodegree-guidelines/core.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Udacity Android Developer Nanodegree Core App Quality Guidelines</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./Udacity Android Developer Nanodegree Core App Quality Guidelines_files/normalize.css">
+    <link rel="stylesheet" href="./Udacity Android Developer Nanodegree Core App Quality Guidelines_files/css">
+    <link rel="stylesheet" href="./Udacity Android Developer Nanodegree Core App Quality Guidelines_files/style.css">
+    <link rel="shortcut icon" href="http://udacity.github.io/android-nanodegree-guidelines/favicon.ico">
+    <script async="" src="./Udacity Android Developer Nanodegree Core App Quality Guidelines_files/analytics.js.download"></script><script src="./Udacity Android Developer Nanodegree Core App Quality Guidelines_files/run_prettify.js.download"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-72397239-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="http://udacity.github.io/android-nanodegree-guidelines/index.html">Java</a></li>
+            <li><a href="http://udacity.github.io/android-nanodegree-guidelines/git.html">Git</a></li>
+            <li><a href="http://udacity.github.io/android-nanodegree-guidelines/core.html" class="active">Core App Quality</a></li>
+            <li><a href="http://udacity.github.io/android-nanodegree-guidelines/tablet.html">Tablet App Quality</a></li>
+            <li class="align_right"><a href="http://udacity.github.io/android-nanodegree-guidelines/core_pt.html">Versão em Português</a></li>
+        </ul>
+    </nav>
+
+    <h1>Udacity Android Developer Nanodegree - Core App Quality Guidelines</h1>
+
+    <section>
+        <h2>Introduction</h2>
+        <p>This guideline acts as the official document to follow in your projects. Udacity reviewers will use this guide to grade your projects(along with the respective rubrics). All Android apps that you code in your projects should meet the criteria listed below. For a more detailed set of rules to assess the basic quality of your apps with, refer to <a href="https://developer.android.com/distribute/essentials/quality/core.html">this</a> link.</p>
+    </section>
+
+    <section>
+        <table border="1" style="width:100%">
+             <tbody><tr>
+                <td bgcolor="#dcdcdc" align="center">
+                    <h2>Visual Design and User Interaction</h2>
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="#ddecff">
+                    <h3>Standard Design</h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                        <li>App does not redefine the expected function of a system icon (such as the Back button).</li>
+                        <li>App does not redefine or misuse Android UI patterns, such that icons or behaviors could be misleading or confusing to users.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="#ddecff">
+                    <h3>Navigation</h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                        <li>App supports standard system Back button navigation and does not make use of any custom, on-screen "Back button" prompts.</li>
+                        <li>All dialogs are dismissible using the Back button.</li>
+                        <li>Pressing the Home button at any point navigates to the Home screen of the device.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="#dcdcdc" align="center">
+                    <h2>Functionality</h2>
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="#ddecff">
+                    <h3>Permissions</h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                        <li>App does not redefine or misuse Android UI patterns, such that icons or behaviors could be misleading or confusing to users.</li>
+                        <li>App does not request permissions to access sensitive data or services that can cost the user money, unless related to a core capability of the app.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="#ddecff">
+                    <h3>User/App State</h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                        <li>App correctly preserves and restores user or app state, that is , student uses a bundle to save app state and restores it via onSaveInstanceState/onRestoreInstanceState. For example,<ul style="list-style-type:square"><li>When a list item is selected, it remains selected on rotation.</li><li>When an activity is displayed, the same activity appears on rotation.</li><li>User text input is preserved on rotation.</li><li>Maintains list items positions on device rotation.</li></ul></li>
+                        <li>When the app is resumed after the device wakes from sleep (locked) state, the app returns the user to the exact state in which it was last used.</li>
+                        <li>When the app is relaunched from Home or All Apps, the app restores the app state as closely as possible to the previous state.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="#dcdcdc" align="center">
+                    <h2>Performance and Stability</h2>
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="#ddecff">
+                    <h3>Stability</h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                        <li>App does not crash, force close, freeze, or otherwise function abnormally on any targeted device.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="#dcdcdc" align="center">
+                    <h2>Google Play</h2>
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="#ddecff">
+                    <h3>Content Policies</h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                        <li>All content is safe for work content.</li>
+                        <li>App adheres to the <a href="https://play.google.com/about/developer-content-policy.html">Google Play Store App policies</a>.</li>
+                        <li>App’s code follows standard Java/Android Style Guidelines.</li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody></table>
+    </section>
+
+
+</body></html>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_video_fragment"
+    android:focusable="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--android:keepScreenOn="true"-->
+
+    <TextView
+        android:id="@+id/tv_no_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="@string/no_video_to_show"
+        android:textColor="@color/noVideoToShow"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold" />
+
+    <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+        android:id="@+id/player_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:focusable="true"
+        android:visibility="invisible" />
+
+    <ProgressBar
+        android:id="@+id/loading_thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        />
+
+    <ImageView
+        android:id="@+id/img_thumbnail"
+        android:contentDescription="@string/content_description_recipe_image_thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!--TextView
+        android:id="@+id/tv_video_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/player_view"
+        android:text="TextView"
+        android:textColor="@color/tv_video_text_color"
+        android:textSize="@dimen/tv_video_text_size" /-->
+
+</RelativeLayout>

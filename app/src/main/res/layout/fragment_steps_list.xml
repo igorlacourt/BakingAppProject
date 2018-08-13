@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/sc_frag_steps_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true" >
+
+            <TextView
+                android:id="@+id/tv_frag_ingredients_title_on_steps_page"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layout_step_margin"
+                android:gravity="center"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/tvVideoTextColor"
+                android:textStyle="bold"
+                android:text="@string/ingredients"/>
+
+            <TextView
+                android:id="@+id/tv_frag_ingredients"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_frag_ingredients_title_on_steps_page"
+                android:layout_marginStart="@dimen/layout_step_margin"
+                android:layout_marginLeft="@dimen/layout_step_margin"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/tvVideoTextColor"
+                />
+
+            <View
+                android:id="@+id/frag_ingredients_bottom_stroke"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/tv_frag_ingredients"
+                android:background="@color/step_layout_stroke"/>
+
+            <android.support.v7.widget.RecyclerView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/frag_steps_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/frag_ingredients_bottom_stroke" />
+            <!-- android:layout_below="@+id/tv_ingredients" -->
+
+        </RelativeLayout>
+
+    </ScrollView>

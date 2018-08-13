@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Baking App</string>
+    <string name="first_step">No previous steps!</string>
+    <string name="last_step">This is the last step!</string>
+    <string name="recipe_introduction">Recipe Introduction</string>
+    <string name="recipe_introduction_description">Quick recipe description.</string>
+    <string name="tap_for_video">Tap for video</string>
+    <string name="no_video_to_show">No video to show</string>
+    <string name="previous_step"><![CDATA[<< previous]]></string>
+    <string name="next_step"><![CDATA[next >>]]></string>
+    <string name="last_viewed">Last Viewed</string>
+    <string name="step_has_no_video">This step has no video.</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="no_internet_connection">No Internet Connection.</string>
+    <string name="poor_internet_connection">Poor internet connection.</string>
+    <string name="error_loading_image">Error loading image.</string>
+    <string name="content_description_recipe_image_thumbnail">Recipe image thumbnail</string>
+    <string name="retry">retry</string>
+    <string name="suspension_points">...</string>
+</resources>

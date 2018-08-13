@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#222</color>
+    <color name="colorPrimaryDark">#555</color>
+    <color name="colorAccent">#5183d1</color>
+    <color name="tvVideoTextColor">#555</color>
+    <color name="step_layout_stroke">#dfdfdf</color>
+    <color name="noVideoToShow">#9b9b9b</color>
+    <color name="widgetBackground">#88000000</color>
+    <color name="widgetTextColor">#ffffff</color>
+    <color name="widgetLine">#fbfbfb</color>
+    <color name="toolBarTitleColor">#fbfbfb</color>
+</resources>

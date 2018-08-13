@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="layout_step_margin">12dp</dimen>
+    <dimen name="text_size">15sp</dimen>
+    <dimen name="tap_for_video_margin">7dp</dimen>
+    <dimen name="recipe_list_item_margin">12dp</dimen>
+    <dimen name="tv_description_size">8sp</dimen>
+
+    <!--
+Refer to App Widget Documentation for margin information
+http://developer.android.com/guide/topics/appwidgets/index.html#CreatingLayout
+    -->
+    <dimen name="widget_margin">8dp</dimen>
+    <dimen name="internet_warnings">16sp</dimen>
+    <dimen name="connection_warning_margin_bottom">10dp</dimen>
+</resources>
